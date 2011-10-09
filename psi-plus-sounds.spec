@@ -2,7 +2,8 @@
 
 Name:           psi-plus-sounds
 Version:        0.15
-Release:        0.1%{rev}%{?dist}.R
+Release:        0.1.%{rev}%{?dist}.R
+Epoch:          1
 BuildArch:      noarch
 Summary:        Sounds for Psi+
 
@@ -30,5 +31,8 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/psi-plus/
 %{_datadir}/psi-plus/sound/*
 
 %changelog
-* Sun Oct 09 2011 Ivan Romanov <drizt@land.ru> - 0.15-0.1.20110924gita883f82.R
+* Sun Oct 09 2011 Ivan Romanov <drizt@land.ru> - 1:0.15-0.1.20110924gita883f82.R
+- Fixed revision
+
+* Sun Oct 09 2011 Ivan Romanov <drizt@land.ru> - 0.15-0.120110924gita883f82.R
 - Initial version of package
