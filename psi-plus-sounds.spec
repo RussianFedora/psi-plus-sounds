@@ -1,4 +1,4 @@
-%define rev 20130124gitac60c0f
+%define rev 20130124gita883f82
 
 Name:           psi-plus-sounds
 Version:        0.16
@@ -30,7 +30,7 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/psi-plus/
 %{_datadir}/psi-plus/sound/*
 
 %changelog
-* Thu Jan 24 2013 Ivan Romanov <drizt@land.ru> - 1:0.16-0.1.20130124gitac60c0f%{?dist}
+* Thu Jan 24 2013 Ivan Romanov <drizt@land.ru> - 1:0.16-0.1.20130124gita883f82.R
 - a new version
 - dropped %%deffatr
 - source tarball moved to i-net
