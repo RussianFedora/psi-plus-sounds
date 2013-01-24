@@ -1,15 +1,15 @@
-%define rev 20110924gita883f82
+%define rev 20130124gitac60c0f
 
 Name:           psi-plus-sounds
-Version:        0.15
-Release:        0.1.%{rev}%{?dist}.R
+Version:        0.16
+Release:        0.1.%{rev}%{?dist}
 Epoch:          1
 BuildArch:      noarch
 Summary:        Sounds for Psi+
 
 License:        Unknown
 URL:            http://code.google.com/p/psi-dev/
-Source0:        %{name}-%{version}-20110924gita883f82.tar.gz
+Source0:        http://files.psi-plus.com/sources/%{name}-%{version}-%{rev}.tar.gz
 Source1:        generate-tarball.sh
 
 BuildRequires:  tar
@@ -27,10 +27,14 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/psi-plus/
 %{__tar} xzf %{SOURCE0} -C $RPM_BUILD_ROOT%{_datadir}/psi-plus/
 
 %files
-%defattr(-,root,root,-)
 %{_datadir}/psi-plus/sound/*
 
 %changelog
+* Thu Jan 24 2013 Ivan Romanov <drizt@land.ru> - 1:0.16-0.1.20130124gitac60c0f%{?dist}
+- a new version
+- dropped %%deffatr
+- source tarball moved to i-net
+
 * Sun Oct 09 2011 Ivan Romanov <drizt@land.ru> - 1:0.15-0.1.20110924gita883f82.R
 - Fixed revision
 
